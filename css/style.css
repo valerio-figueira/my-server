@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+    transition: .3s linear;
+}
+
+body.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+
+    /*FLEX-GROW IN FLEX-DIR:COLUMN ONLY WORKS WITH HEIGHT*/
+    height: 100vh;    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: midnightblue;
+    padding: 1rem 7%;
+    flex-grow: 0;
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+header a:hover{
+    color: greenyellow;
+}
+header .navbar{
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+
+
+main.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    padding: 2rem 7%;
+    margin: auto;
+
+    flex-grow: 1;
+
+    max-width: 950px;
+}
+
+.post{
+    margin: 0 .5rem;
+}
+
+footer{
+    background: midnightblue;
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+    flex-grow: 0;
+}
